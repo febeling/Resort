@@ -5,6 +5,25 @@
       location = "container:"
       name = "Resort">
       <FileRef
+         location = "group:CHANGELOG.md">
+      </FileRef>
+      <Group
+         location = "group:Example"
+         name = "Example">
+         <FileRef
+            location = "group:Podfile">
+         </FileRef>
+      </Group>
+      <FileRef
+         location = "group:LICENSE">
+      </FileRef>
+      <FileRef
+         location = "group:Rakefile">
+      </FileRef>
+      <FileRef
+         location = "group:Resort.podspec">
+      </FileRef>
+      <FileRef
          location = "group:README.md">
       </FileRef>
       <Group

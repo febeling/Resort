@@ -12,6 +12,10 @@
 		501A6FBD1928D9CC00954C51 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 501A6FBB1928D9CC00954C51 /* InfoPlist.strings */; };
 		501A6FBF1928D9CC00954C51 /* KeyPathComparatorTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 501A6FBE1928D9CC00954C51 /* KeyPathComparatorTest.m */; };
 		501FA3D81928F7ED00914857 /* KeyPathComparatorTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 501A6FBE1928D9CC00954C51 /* KeyPathComparatorTest.m */; };
+		501FA3DC1929082900914857 /* NSArray+Shuffle.m in Sources */ = {isa = PBXBuildFile; fileRef = 501FA3DB1929082900914857 /* NSArray+Shuffle.m */; };
+		501FA3DD1929082900914857 /* NSArray+Shuffle.m in Sources */ = {isa = PBXBuildFile; fileRef = 501FA3DB1929082900914857 /* NSArray+Shuffle.m */; };
+		501FA3E21929087C00914857 /* NSMutableArray+Shuffle.m in Sources */ = {isa = PBXBuildFile; fileRef = 501FA3E11929087C00914857 /* NSMutableArray+Shuffle.m */; };
+		501FA3E31929087C00914857 /* NSMutableArray+Shuffle.m in Sources */ = {isa = PBXBuildFile; fileRef = 501FA3E11929087C00914857 /* NSMutableArray+Shuffle.m */; };
 		507C36AD1928DE8E00E80836 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 507C36AC1928DE8E00E80836 /* CoreFoundation.framework */; };
 		507C36B31928DE8E00E80836 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 507C36B11928DE8E00E80836 /* InfoPlist.strings */; };
 		507C36B81928E19F00E80836 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 501A6FB21928D9CC00954C51 /* XCTest.framework */; };
@@ -28,6 +32,10 @@
 		501A6FBA1928D9CC00954C51 /* iOS Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iOS Tests-Info.plist"; sourceTree = "<group>"; };
 		501A6FBC1928D9CC00954C51 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		501A6FBE1928D9CC00954C51 /* KeyPathComparatorTest.m */ = {isa = PBXFileReference; indentWidth = 4; lastKnownFileType = sourcecode.c.objc; name = KeyPathComparatorTest.m; path = "iOS Tests/KeyPathComparatorTest.m"; sourceTree = "<group>"; tabWidth = 4; };
+		501FA3DA1929082900914857 /* NSArray+Shuffle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Shuffle.h"; sourceTree = "<group>"; };
+		501FA3DB1929082900914857 /* NSArray+Shuffle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Shuffle.m"; sourceTree = "<group>"; };
+		501FA3E01929087C00914857 /* NSMutableArray+Shuffle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+Shuffle.h"; sourceTree = "<group>"; };
+		501FA3E11929087C00914857 /* NSMutableArray+Shuffle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+Shuffle.m"; sourceTree = "<group>"; };
 		507C36AB1928DE8E00E80836 /* OS X Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "OS X Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		507C36AC1928DE8E00E80836 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
 		507C36B01928DE8E00E80836 /* OS X Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "OS X Tests-Info.plist"; sourceTree = "<group>"; };
@@ -65,6 +73,7 @@
 		501A6F8B1928D8E500954C51 = {
 			isa = PBXGroup;
 			children = (
+				501FA3D9192907FE00914857 /* Test Helpers */,
 				501FA3D71928F7D700914857 /* Tests */,
 				507C36B41928DE8E00E80836 /* Tests-Prefix.pch */,
 				501A6FB81928D9CC00954C51 /* iOS Tests */,
@@ -123,6 +132,17 @@
 				501A6FBE1928D9CC00954C51 /* KeyPathComparatorTest.m */,
 			);
 			name = Tests;
+			sourceTree = "<group>";
+		};
+		501FA3D9192907FE00914857 /* Test Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				501FA3DA1929082900914857 /* NSArray+Shuffle.h */,
+				501FA3DB1929082900914857 /* NSArray+Shuffle.m */,
+				501FA3E01929087C00914857 /* NSMutableArray+Shuffle.h */,
+				501FA3E11929087C00914857 /* NSMutableArray+Shuffle.m */,
+			);
+			name = "Test Helpers";
 			sourceTree = "<group>";
 		};
 		507C36AE1928DE8E00E80836 /* OS X Tests */ = {
@@ -296,7 +316,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				501FA3DC1929082900914857 /* NSArray+Shuffle.m in Sources */,
 				501A6FBF1928D9CC00954C51 /* KeyPathComparatorTest.m in Sources */,
+				501FA3E21929087C00914857 /* NSMutableArray+Shuffle.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -304,7 +326,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				501FA3DD1929082900914857 /* NSArray+Shuffle.m in Sources */,
 				501FA3D81928F7ED00914857 /* KeyPathComparatorTest.m in Sources */,
+				501FA3E31929087C00914857 /* NSMutableArray+Shuffle.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
