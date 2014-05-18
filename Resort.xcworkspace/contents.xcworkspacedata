@@ -8,13 +8,13 @@
          location = "group:README.md">
       </FileRef>
       <Group
-         location = "container:"
+         location = "container:Source"
          name = "Source">
          <FileRef
-            location = "group:Classes/RESResort.h">
+            location = "group:RESResort.h">
          </FileRef>
          <FileRef
-            location = "group:Classes/RESResort.m">
+            location = "group:RESResort.m">
          </FileRef>
       </Group>
    </Group>
