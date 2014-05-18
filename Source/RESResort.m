@@ -12,7 +12,18 @@
 
 + (NSComparator)compoundComparatorWithComparatorArray:(NSArray *)comparators
 {
-    return nil;
+    NSParameterAssert(comparators != nil);
+    NSParameterAssert(comparators.count > 0);
+
+    return ^NSComparisonResult (NSObject *a, NSObject *b) {
+        NSComparisonResult comparison = 0;
+        for(NSComparator comparator in comparators) {
+            comparison = comparator(a, b);
+            if(comparison != NSOrderedSame) return comparison;
+        }
+
+        return comparison;
+    };
 }
 
 + (NSComparator)comparatorForKeyPath:(NSString *)keyPath nilComparison:(RESNilComparison)nilComparison

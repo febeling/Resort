@@ -43,6 +43,8 @@
 
 - (void)setUp
 {
+    [super setUp];
+ 
     _a = [[Container alloc] init];
     _a.item = [[Item alloc] init];
     _a.item.name = @"Aaron";

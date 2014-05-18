@@ -19,6 +19,8 @@
 		507C36AD1928DE8E00E80836 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 507C36AC1928DE8E00E80836 /* CoreFoundation.framework */; };
 		507C36B31928DE8E00E80836 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 507C36B11928DE8E00E80836 /* InfoPlist.strings */; };
 		507C36B81928E19F00E80836 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 501A6FB21928D9CC00954C51 /* XCTest.framework */; };
+		50BBD57319292A6700978279 /* CompoundComparatorTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 50BBD57219292A6700978279 /* CompoundComparatorTest.m */; };
+		50BBD57419292D3D00978279 /* CompoundComparatorTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 50BBD57219292A6700978279 /* CompoundComparatorTest.m */; };
 		8611315DDD544A259A6BFEA1 /* libPods-ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DC428F2533E64A1E9951CE29 /* libPods-ios.a */; };
 		BDD19B97F56C4334963EAAC7 /* libPods-osx.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 63EAAA0BE4D24C3CB773F2A7 /* libPods-osx.a */; };
 /* End PBXBuildFile section */
@@ -41,6 +43,7 @@
 		507C36B01928DE8E00E80836 /* OS X Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "OS X Tests-Info.plist"; sourceTree = "<group>"; };
 		507C36B21928DE8E00E80836 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		507C36B41928DE8E00E80836 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
+		50BBD57219292A6700978279 /* CompoundComparatorTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CompoundComparatorTest.m; sourceTree = "<group>"; };
 		63EAAA0BE4D24C3CB773F2A7 /* libPods-osx.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-osx.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E03F211FD1D45C789743EB4 /* Pods-osx.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-osx.xcconfig"; path = "Pods/Pods-osx.xcconfig"; sourceTree = "<group>"; };
 		DC428F2533E64A1E9951CE29 /* libPods-ios.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ios.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -130,6 +133,7 @@
 			isa = PBXGroup;
 			children = (
 				501A6FBE1928D9CC00954C51 /* KeyPathComparatorTest.m */,
+				50BBD57219292A6700978279 /* CompoundComparatorTest.m */,
 			);
 			name = Tests;
 			sourceTree = "<group>";
@@ -316,6 +320,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50BBD57319292A6700978279 /* CompoundComparatorTest.m in Sources */,
 				501FA3DC1929082900914857 /* NSArray+Shuffle.m in Sources */,
 				501A6FBF1928D9CC00954C51 /* KeyPathComparatorTest.m in Sources */,
 				501FA3E21929087C00914857 /* NSMutableArray+Shuffle.m in Sources */,
@@ -326,6 +331,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50BBD57419292D3D00978279 /* CompoundComparatorTest.m in Sources */,
 				501FA3DD1929082900914857 /* NSArray+Shuffle.m in Sources */,
 				501FA3D81928F7ED00914857 /* KeyPathComparatorTest.m in Sources */,
 				501FA3E31929087C00914857 /* NSMutableArray+Shuffle.m in Sources */,

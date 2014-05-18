@@ -3,18 +3,19 @@
 [![Version](http://cocoapod-badges.herokuapp.com/v/Resort/badge.png)](http://cocoadocs.org/docsets/Resort)
 [![Platform](http://cocoapod-badges.herokuapp.com/p/Resort/badge.png)](http://cocoadocs.org/docsets/Resort)
 
-Resort is a small library that builds comparators from key paths. This
-is a very straightforward thing to do, if it weren't for the edge
-cases.
+Resort is a small library that builds comparators from key paths and
+combines separate comparators into compound comparators.
 
-This library deals with nil and NSNull values. It uses a pragmatic
-default and considers them always less. But if that's not what you
-need you can specify that nil should always be treated as more. Or you
-might want to fail fast and throw an exception.
+Sorting from a keyPath would be a very straightforward thing to do, if
+it weren't for the edge cases. This library deals with nil and NSNull
+values. It uses a pragmatic default and considers them always
+less. But if that's not what you need you can specify that `nil` should
+always be treated as more. Or you might want to fail fast and throw an
+exception.
 
-Order is properly defined for the classes in Foundation that support
-it already: NSString, NSDate, NSNumber, NSIndexPath, as well as their
-subclasses, e.g. NSMutableString and NSDecimalNumber.
+Order is defined for the classes in Foundation that support it
+already: `NSString`, `NSDate`, `NSNumber`, `NSIndexPath`, as well as
+their subclasses, e.g. NSMutableString and NSDecimalNumber.
 
 In other cases, the comparator just performs the ordering on the
 `-description` of the object.
