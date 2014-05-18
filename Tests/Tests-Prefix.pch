@@ -1,0 +1,18 @@
+//
+//  Prefix header for OS X and iOS (platform independent)
+//
+
+#ifndef Resort_Prefic_Headers
+#define Resort_Prefic_Headers
+
+#ifdef __OBJC__
+  #import <Foundation/Foundation.h>
+#endif
+
+#define EXP_SHORTHAND
+#import "Expecta.h"
+
+#define MOCKITO_SHORTHAND
+#import <OCMockito/OCMockito.h>
+
+#endif

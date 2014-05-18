@@ -8,11 +8,11 @@
 
 #import <XCTest/XCTest.h>
 
-@interface iOS_Tests : XCTestCase
+@interface KeyPathComparatorTest : XCTestCase
 
 @end
 
-@implementation iOS_Tests
+@implementation KeyPathComparatorTest
 
 - (void)setUp
 {
@@ -28,7 +28,7 @@
 
 - (void)testExample
 {
-    XCTAssertTrue(YES);
+    XCTAssertTrue(NO);
 }
 
 @end

@@ -1,10 +1,10 @@
 xcodeproj 'Resort Tests'
 workspace '../Resort'
-#inhibit_all_warnings!
+# inhibit_all_warnings!
 
 def import_pods
-  pod 'OCMock', '~> 2.1.1'
-  pod 'Expecta', '~> 0.2.1'
+  pod 'OCMockito'
+  pod 'Expecta'
   pod 'Resort', :path => '../'
 end
 

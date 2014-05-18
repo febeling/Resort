@@ -16,5 +16,5 @@ Pod::Spec.new do |s|
   s.author       = { "Florian Ebeling" => "florian.ebeling@gmail.com" }
   s.source       = { :git => "https://github.com/febeling/Resort.git", :tag => s.version.to_s }
   s.requires_arc = true
-  s.source_files = 'Classes'
+  s.source_files = 'Source'
 end

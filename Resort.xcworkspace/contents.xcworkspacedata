@@ -1,1 +1,27 @@
-<?xml version='1.0' encoding='UTF-8'?><Workspace version='1.0'><FileRef location='group:Tests/Resort Tests.xcodeproj'/><FileRef location='group:Tests/Pods/Pods.xcodeproj'/></Workspace>
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <Group
+      location = "container:"
+      name = "Resort">
+      <FileRef
+         location = "group:README.md">
+      </FileRef>
+      <Group
+         location = "container:"
+         name = "Source">
+         <FileRef
+            location = "group:Classes/RESResort.h">
+         </FileRef>
+         <FileRef
+            location = "group:Classes/RESResort.m">
+         </FileRef>
+      </Group>
+   </Group>
+   <FileRef
+      location = "group:Tests/Resort Tests.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Tests/Pods/Pods.xcodeproj">
+   </FileRef>
+</Workspace>

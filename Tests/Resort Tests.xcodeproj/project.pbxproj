@@ -10,11 +10,11 @@
 		501A6FB31928D9CC00954C51 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 501A6FB21928D9CC00954C51 /* XCTest.framework */; };
 		501A6FB41928D9CC00954C51 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 501A6F991928D9CB00954C51 /* Foundation.framework */; };
 		501A6FBD1928D9CC00954C51 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 501A6FBB1928D9CC00954C51 /* InfoPlist.strings */; };
-		501A6FBF1928D9CC00954C51 /* iOS_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 501A6FBE1928D9CC00954C51 /* iOS_Tests.m */; };
+		501A6FBF1928D9CC00954C51 /* KeyPathComparatorTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 501A6FBE1928D9CC00954C51 /* KeyPathComparatorTest.m */; };
+		501FA3D81928F7ED00914857 /* KeyPathComparatorTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 501A6FBE1928D9CC00954C51 /* KeyPathComparatorTest.m */; };
 		507C36AD1928DE8E00E80836 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 507C36AC1928DE8E00E80836 /* CoreFoundation.framework */; };
 		507C36B31928DE8E00E80836 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 507C36B11928DE8E00E80836 /* InfoPlist.strings */; };
 		507C36B81928E19F00E80836 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 501A6FB21928D9CC00954C51 /* XCTest.framework */; };
-		507C36BD1928EA7600E80836 /* OSX_Test.m in Sources */ = {isa = PBXBuildFile; fileRef = 507C36BB1928EA7200E80836 /* OSX_Test.m */; };
 		8611315DDD544A259A6BFEA1 /* libPods-ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DC428F2533E64A1E9951CE29 /* libPods-ios.a */; };
 		BDD19B97F56C4334963EAAC7 /* libPods-osx.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 63EAAA0BE4D24C3CB773F2A7 /* libPods-osx.a */; };
 /* End PBXBuildFile section */
@@ -23,19 +23,16 @@
 		4C5E926980C8423080AD8D9E /* Pods-ios.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios.xcconfig"; path = "Pods/Pods-ios.xcconfig"; sourceTree = "<group>"; };
 		501A6F991928D9CB00954C51 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		501A6F9B1928D9CB00954C51 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		501A6F9D1928D9CB00954C51 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		501A6FB11928D9CC00954C51 /* iOS Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iOS Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		501A6FB21928D9CC00954C51 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		501A6FBA1928D9CC00954C51 /* iOS Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iOS Tests-Info.plist"; sourceTree = "<group>"; };
 		501A6FBC1928D9CC00954C51 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		501A6FBE1928D9CC00954C51 /* iOS_Tests.m */ = {isa = PBXFileReference; indentWidth = 4; lastKnownFileType = sourcecode.c.objc; path = iOS_Tests.m; sourceTree = "<group>"; tabWidth = 4; };
+		501A6FBE1928D9CC00954C51 /* KeyPathComparatorTest.m */ = {isa = PBXFileReference; indentWidth = 4; lastKnownFileType = sourcecode.c.objc; name = KeyPathComparatorTest.m; path = "iOS Tests/KeyPathComparatorTest.m"; sourceTree = "<group>"; tabWidth = 4; };
 		507C36AB1928DE8E00E80836 /* OS X Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "OS X Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		507C36AC1928DE8E00E80836 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
 		507C36B01928DE8E00E80836 /* OS X Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "OS X Tests-Info.plist"; sourceTree = "<group>"; };
 		507C36B21928DE8E00E80836 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		507C36B41928DE8E00E80836 /* OS X Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OS X Tests-Prefix.pch"; sourceTree = "<group>"; };
-		507C36BA1928E34B00E80836 /* iOS Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iOS Tests-Prefix.pch"; sourceTree = "<group>"; };
-		507C36BB1928EA7200E80836 /* OSX_Test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSX_Test.m; sourceTree = "<group>"; };
+		507C36B41928DE8E00E80836 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		63EAAA0BE4D24C3CB773F2A7 /* libPods-osx.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-osx.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E03F211FD1D45C789743EB4 /* Pods-osx.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-osx.xcconfig"; path = "Pods/Pods-osx.xcconfig"; sourceTree = "<group>"; };
 		DC428F2533E64A1E9951CE29 /* libPods-ios.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ios.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -68,6 +65,8 @@
 		501A6F8B1928D8E500954C51 = {
 			isa = PBXGroup;
 			children = (
+				501FA3D71928F7D700914857 /* Tests */,
+				507C36B41928DE8E00E80836 /* Tests-Prefix.pch */,
 				501A6FB81928D9CC00954C51 /* iOS Tests */,
 				507C36AE1928DE8E00E80836 /* OS X Tests */,
 				501A6F981928D9CB00954C51 /* Frameworks */,
@@ -93,7 +92,6 @@
 			children = (
 				501A6F991928D9CB00954C51 /* Foundation.framework */,
 				501A6F9B1928D9CB00954C51 /* CoreGraphics.framework */,
-				501A6F9D1928D9CB00954C51 /* UIKit.framework */,
 				501A6FB21928D9CC00954C51 /* XCTest.framework */,
 				507C36AC1928DE8E00E80836 /* CoreFoundation.framework */,
 				DC428F2533E64A1E9951CE29 /* libPods-ios.a */,
@@ -105,7 +103,6 @@
 		501A6FB81928D9CC00954C51 /* iOS Tests */ = {
 			isa = PBXGroup;
 			children = (
-				501A6FBE1928D9CC00954C51 /* iOS_Tests.m */,
 				501A6FB91928D9CC00954C51 /* Supporting Files */,
 			);
 			path = "iOS Tests";
@@ -116,16 +113,22 @@
 			children = (
 				501A6FBA1928D9CC00954C51 /* iOS Tests-Info.plist */,
 				501A6FBB1928D9CC00954C51 /* InfoPlist.strings */,
-				507C36BA1928E34B00E80836 /* iOS Tests-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		501FA3D71928F7D700914857 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				501A6FBE1928D9CC00954C51 /* KeyPathComparatorTest.m */,
+			);
+			name = Tests;
 			sourceTree = "<group>";
 		};
 		507C36AE1928DE8E00E80836 /* OS X Tests */ = {
 			isa = PBXGroup;
 			children = (
 				507C36AF1928DE8E00E80836 /* Supporting Files */,
-				507C36BB1928EA7200E80836 /* OSX_Test.m */,
 			);
 			path = "OS X Tests";
 			sourceTree = "<group>";
@@ -135,7 +138,6 @@
 			children = (
 				507C36B01928DE8E00E80836 /* OS X Tests-Info.plist */,
 				507C36B11928DE8E00E80836 /* InfoPlist.strings */,
-				507C36B41928DE8E00E80836 /* OS X Tests-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -294,7 +296,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				501A6FBF1928D9CC00954C51 /* iOS_Tests.m in Sources */,
+				501A6FBF1928D9CC00954C51 /* KeyPathComparatorTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,7 +304,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				507C36BD1928EA7600E80836 /* OSX_Test.m in Sources */,
+				501FA3D81928F7ED00914857 /* KeyPathComparatorTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -367,7 +369,7 @@
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "iOS Tests/iOS Tests-Prefix.pch";
+				GCC_PREFIX_HEADER = "Tests-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -414,7 +416,7 @@
 				);
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "iOS Tests/iOS Tests-Prefix.pch";
+				GCC_PREFIX_HEADER = "Tests-Prefix.pch";
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -458,7 +460,7 @@
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "OS X Tests/OS X Tests-Prefix.pch";
+				GCC_PREFIX_HEADER = "Tests-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -508,7 +510,7 @@
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "OS X Tests/OS X Tests-Prefix.pch";
+				GCC_PREFIX_HEADER = "Tests-Prefix.pch";
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
