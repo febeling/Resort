@@ -29,13 +29,6 @@ the Example directory first.
 
 Only Foundation framework. Tested on iOS 7 and OS X 10.9.
 
-## Installation
-
-Resort is available through [CocoaPods](http://cocoapods.org), to
-install it simply add the following line to your Podfile:
-
-    pod "Resort"
-
 ## Author
 
 Florian Ebeling, florian.ebeling@gmail.com
