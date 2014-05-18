@@ -1,6 +1,44 @@
-desc "Runs the specs [EMPTY]"
-task :spec do
-  # Provide your own implementation
+include FileUtils::Verbose
+
+task :default => 'test'
+task :spec => :test
+
+namespace :test do
+  desc "Run the Tests for iOS"
+  task :ios do
+    run_tests('iOS Tests', 'iphonesimulator')
+    tests_failed('iOS') unless $?.success?
+  end
+
+  desc "Run the Tests for Mac OS X"
+  task :osx do
+    run_tests('OS X Tests', 'macosx')
+    tests_failed('OSX') unless $?.success?
+  end
+end
+
+desc "Run the Tests for iOS & Mac OS X"
+task :test do
+  Rake::Task['test:ios'].invoke
+  Rake::Task['test:osx'].invoke if is_mavericks_or_above
+end
+
+def run_tests(scheme, sdk)
+  sh("xcodebuild -workspace Resort.xcworkspace -scheme '#{scheme}' -sdk '#{sdk}' -configuration Release clean test | xcpretty -c ; exit ${PIPESTATUS[0]}") rescue nil
+end
+
+def is_mavericks_or_above
+  osx_version = `sw_vers -productVersion`.chomp
+  Gem::Version.new(osx_version) >= Gem::Version.new('10.9')
+end
+
+def tests_failed(platform)
+  puts red("#{platform} unit tests failed")
+  exit $?.exitstatus
+end
+
+def red(string)
+ "\033[0;31m! #{string}"
 end
 
 task :version do
@@ -18,7 +56,7 @@ task :version do
     version = "0.0.1"
   else
     puts "The current released version of your pod is " +
-          remote_spec_version.to_s()
+      remote_spec_version.to_s()
     version = suggested_version_number
   end
 
@@ -151,6 +189,6 @@ end
 def replace_version_number(new_version_number)
   text = File.read(podspec_path)
   text.gsub!(/(s.version( )*= ")#{spec_version}(")/,
-              "\\1#{new_version_number}\\3")
+    "\\1#{new_version_number}\\3")
   File.open(podspec_path, "w") { |file| file.puts text }
 end
