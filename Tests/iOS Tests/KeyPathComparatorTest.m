@@ -26,10 +26,6 @@
 @end
 
 @implementation Container
-- (NSString *)description
-{
-    return [NSString stringWithFormat:@"<Container %@>", self.item.name];
-}
 @end
 
 @interface KeyPathComparatorTest : XCTestCase
