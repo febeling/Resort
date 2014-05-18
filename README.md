@@ -8,14 +8,16 @@ combines separate comparators into compound comparators.
 
 Sorting from a keyPath would be a very straightforward thing to do, if
 it weren't for the edge cases. This library deals with nil and NSNull
-values. It uses a pragmatic default and considers them always
-less. But if that's not what you need you can specify that `nil` should
-always be treated as more. Or you might want to fail fast and throw an
-exception.
+values and offers special handling of those, like always-less and
+always-greater comparison. It uses always-less as a pragmatic
+default. But if that's not what you need you can specify that `nil`
+should always be treated as greater. Or you might want to fail fast
+and throw an exception.
 
-Order is defined for the classes in Foundation that support it
-already: `NSString`, `NSDate`, `NSNumber`, `NSIndexPath`, as well as
-their subclasses, e.g. NSMutableString and NSDecimalNumber.
+Order is defined for the classes in Foundation that support it already
+via `compare:` methods: `NSString`, `NSDate`, `NSNumber`,
+`NSIndexPath`, as well as their subclasses, e.g. `NSMutableString` and
+`NSDecimalNumber`.
 
 In other cases, the comparator just performs the ordering on the
 `-description` of the object.
