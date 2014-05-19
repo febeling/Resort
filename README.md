@@ -40,18 +40,18 @@ the Example directory first.
 Creation and use of a keyPath comparator looks like this:
 
 ```objc
-    NSComparator comparator = [RESResort comparatorForKeyPath:@"name"];
-    NSArray *sorted = [@[ z, a ] sortedArrayUsingComparator:comparator];
+NSComparator comparator = [RESResort comparatorForKeyPath:@"name"];
+NSArray *sorted = [@[ z, a ] sortedArrayUsingComparator:comparator];
 ```
 
 Two comparators (keyPath based or otherwise) can be combined into a
 compound comparator and used like this:
 
 ```objc
-    NSComparator nameComparator = [RESResort comparatorForKeyPath:@"name"];
-    NSComparator countComparator = [RESResort comparatorForKeyPath:@"count"];
-    NSComparator compoundComparator = [RESResort compoundComparatorWithComparatorArray:@[ nameComparator, countComparator ]];
-    NSArray *sorted = [_array sortedArrayUsingComparator:compoundComparator];
+NSComparator nameComparator = [RESResort comparatorForKeyPath:@"name"];
+NSComparator countComparator = [RESResort comparatorForKeyPath:@"count"];
+NSComparator compoundComparator = [RESResort compoundComparatorWithComparatorArray:@[ nameComparator, countComparator ]];
+NSArray *sorted = [_array sortedArrayUsingComparator:compoundComparator];
 ```
 
 ## Requirements
