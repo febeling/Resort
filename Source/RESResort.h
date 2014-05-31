@@ -83,6 +83,10 @@ extern NSString * const RESErrorDomain;
    orders. Most of the time relaying to one of the built-in ones makes
    a lot of sense, though.
 
+   If the object doesn't implement the `-compare:` method, the
+   comparator will fall back to sort on the description string of the
+   value.
+
    Sort order for `nil` values is usually undefined. For practical
    purposes it's often useful to have more control. You can specify
    `nil` always is considered less by passing `RESNilComparisonLess`,
