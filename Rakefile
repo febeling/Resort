@@ -24,7 +24,7 @@ task :test do
 end
 
 def run_tests(scheme, sdk)
-  sh("xcodebuild -workspace Resort.xcworkspace -scheme '#{scheme}' -sdk '#{sdk}' -configuration Release clean test | xcpretty -c ; exit ${PIPESTATUS[0]}") rescue nil
+  sh("xcodebuild -workspace Resort.xcworkspace -scheme '#{scheme}' -sdk '#{sdk}' -configuration Release clean test") rescue nil
 end
 
 def is_mavericks_or_above
