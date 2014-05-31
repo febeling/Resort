@@ -6,4 +6,5 @@ before_install:
   - gem install xcpretty --no-document
   - gem install cocoapods --no-document
 install:
-  - pod update
+  - rm Tests/Podfile.lock # Workaround CocoaPods/CocoaPods#1623
+  - (cd Tests && pod install)
