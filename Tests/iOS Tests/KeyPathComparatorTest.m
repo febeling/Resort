@@ -40,13 +40,13 @@
 - (void)setUp
 {
     [super setUp];
- 
+
     _a = [[Container alloc] init];
     _a.item = [[Item alloc] init];
     _a.item.name = @"Aaron";
     _a.item.date = NSDate.date;
     _a.item.count = 1;
-   
+
     _b = [[Container alloc] init];
     _b.item = [[Item alloc] init];
     _b.item.name = @"Ben";
