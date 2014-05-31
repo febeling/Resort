@@ -5,3 +5,5 @@ before_install:
   - brew upgrade xctool
   - gem install xcpretty --no-document
   - gem install cocoapods --no-document
+install:
+  - pod update
