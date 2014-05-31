@@ -3,5 +3,5 @@ script: rake test
 before_install:
   - brew update
   - brew upgrade xctool
-  - brew install xcpretty
+  - gem install xcpretty --no-document
   - gem install cocoapods --no-document
