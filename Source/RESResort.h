@@ -28,6 +28,21 @@ extern NSString * const RESErrorDomain;
  */
 @interface RESResort : NSObject
 
+///---------------------
+/// @name Transformation
+///---------------------
+
+/**
+   Create a comparator with reverse sort order of the one passed in.
+
+   The method creates a comparator that produces the reverse sort
+   order as the comparator passed in.
+
+   @param the base comparator
+   @return the reversed comparator
+ */
++ (NSComparator)reverseComparator:(NSComparator)comparator;
+
 ///------------------
 /// @name Combination
 ///------------------

@@ -10,6 +10,13 @@
 
 @implementation RESResort
 
++ (NSComparator)reverseComparator:(NSComparator)comparator
+{
+    return ^NSComparisonResult (NSObject *a, NSObject *b) {
+        return comparator(a, b) * -1;
+    };
+}
+
 + (NSComparator)compoundComparatorWithComparatorArray:(NSArray *)comparators
 {
     NSParameterAssert(comparators != nil);
