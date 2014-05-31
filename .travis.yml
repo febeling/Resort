@@ -1,8 +1,7 @@
 language: objective-c
+env: LANG=en_US.UTF-8
 script: rake test
 before_install:
-  - brew update
-  - brew upgrade xctool
   - gem install xcpretty --no-document
   - gem install cocoapods --no-document
 install:
