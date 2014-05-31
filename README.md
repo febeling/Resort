@@ -1,5 +1,6 @@
 # Resort
 
+[![Build Status](https://secure.travis-ci.org/febeling/Resort.png)](http://travis-ci.org/febeling/Resort)
 [![Version](http://cocoapod-badges.herokuapp.com/v/Resort/badge.png)](http://cocoadocs.org/docsets/Resort)
 [![Platform](http://cocoapod-badges.herokuapp.com/p/Resort/badge.png)](http://cocoadocs.org/docsets/Resort)
 
