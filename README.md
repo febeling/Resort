@@ -3,8 +3,9 @@
 [![Version](http://cocoapod-badges.herokuapp.com/v/Resort/badge.png)](http://cocoadocs.org/docsets/Resort)
 [![Platform](http://cocoapod-badges.herokuapp.com/p/Resort/badge.png)](http://cocoadocs.org/docsets/Resort)
 
-Resort is a small library that builds comparators from key paths and
-combines separate comparators into compound comparators.
+Resort is a small library that builds comparators from key paths,
+combines separate comparators into compound ones, and can build
+reverse comparators.
 
 ### Key Path Comparators
 
