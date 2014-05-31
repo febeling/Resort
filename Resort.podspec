@@ -5,12 +5,16 @@ Pod::Spec.new do |s|
   s.description  = <<-DESC
                    Simple comparators library for sorting in Objective-C.
 
-                   Support for building comparators on top of a
-                   keypath using KVC.  Also, support to combine
+                   Support for building compound comparators,
+                   reversing comparators, and creating new ones on top
+                   of a keypath.
+
+                   Compound compartors support combining individual
                    comparators for first, second and more sort keys
-                   into a single one. These are compound
-                   comparators. This is a very small library for both
-                   OS X and iOS.
+                   into a single one.
+
+                   This is a very small library, for both OS X and
+                   iOS.
 
                    DESC
   s.homepage     = "http://github.com/febeling/Resort"
