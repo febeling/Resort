@@ -64,14 +64,8 @@
             }
         }
 
-        if([aRank isKindOfClass:NSString.class] && [bRank isKindOfClass:NSString.class]) {
-            return [aRank.description compare:bRank.description];
-        } else if([aRank isKindOfClass:NSNumber.class] && [bRank isKindOfClass:NSNumber.class]) {
-            return [(NSNumber *)aRank compare:(NSNumber *)bRank];
-        } else if([aRank isKindOfClass:NSDate.class] && [bRank isKindOfClass:NSDate.class]) {
-            return [(NSDate *)aRank compare:(NSDate *)bRank];
-        } else if([aRank isKindOfClass:NSIndexPath.class] && [bRank isKindOfClass:NSIndexPath.class]) {
-            return [(NSIndexPath *)aRank compare:(NSIndexPath *)bRank];
+        if([aRank respondsToSelector:@selector(compare:)]) {
+            return (NSComparisonResult)[aRank performSelector:@selector(compare:) withObject:bRank];
         }
 
         return [aRank.description compare:bRank.description];
