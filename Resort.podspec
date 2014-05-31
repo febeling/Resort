@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "Resort"
-  s.version      = "0.2.0"
+  s.version      = "0.3.0"
   s.summary      = "Simple, flexible sorting with Objective-C."
   s.description  = <<-DESC
                    Simple comparators library for sorting in Objective-C.
