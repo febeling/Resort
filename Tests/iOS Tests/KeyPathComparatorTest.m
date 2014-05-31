@@ -125,7 +125,7 @@
 
     expect(^{
         [_unsorted sortedArrayUsingComparator:comparator];
-    }).to.raise(@"Nil comparison");
+    }).to.raise(RESNilComparisonException);
 }
 
 - (void)testKeyPathSorting_Date

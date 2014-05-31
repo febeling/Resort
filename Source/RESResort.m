@@ -8,6 +8,8 @@
 
 #import "RESResort.h"
 
+NSString * const RESNilComparisonException = @"RESNilComparisonException";
+
 @implementation RESResort
 
 + (NSComparator)reverseComparator:(NSComparator)comparator
@@ -45,7 +47,8 @@
         if(aRank == nil || bRank == nil) {
             switch (nilComparison) {
                 case RESNilComparisonThrows:
-                    [NSException raise:@"Nil comparison" format:@"comparison with nil is undefined"];
+                    [NSException raise:RESNilComparisonException
+                                format:@"comparison with nil is undefined"];
                     break;
                 case RESNilComparisonLess:
                     if(aRank == nil && bRank == nil) {

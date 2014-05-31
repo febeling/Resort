@@ -18,7 +18,7 @@ typedef NS_ENUM(NSUInteger, RESNilComparison) {
     RESNilComparisonMore
 };
 
-extern NSString * const RESErrorDomain;
+extern NSString * const RESNilComparisonException;
 
 /**
    Package containing a number of class methods for creating and
