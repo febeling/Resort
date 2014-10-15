@@ -29,7 +29,7 @@ In other cases, the comparator just performs the ordering on the
 ### Compound Comparators
 
 Comparators build from key paths are very similar to
-NSSortDiscriptors, but the have the advantage to be easy to
+NSSortDescriptors, but the have the advantage to be easy to
 combine. This is what the other half of the library is about, compound
 comparators. Think of it as a simple, composable way to define a sort
 order with primary, secondary, and so on sort keys.
